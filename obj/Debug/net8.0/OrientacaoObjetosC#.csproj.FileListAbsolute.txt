@@ -1,0 +1,15 @@
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\bin\Debug\net8.0\OrientacaoObjetosC#.exe
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\bin\Debug\net8.0\OrientacaoObjetosC#.deps.json
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\bin\Debug\net8.0\OrientacaoObjetosC#.runtimeconfig.json
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\bin\Debug\net8.0\OrientacaoObjetosC#.dll
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\bin\Debug\net8.0\OrientacaoObjetosC#.pdb
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.AssemblyInfoInputs.cache
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.AssemblyInfo.cs
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.csproj.CoreCompileInputs.cache
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.sourcelink.json
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.dll
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\refint\OrientacaoObjetosC#.dll
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.pdb
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\OrientacaoObjetosC#.genruntimeconfig.cache
+C:\Projetos\AutoPlay\OrientacaoObjetosC#\obj\Debug\net8.0\ref\OrientacaoObjetosC#.dll
