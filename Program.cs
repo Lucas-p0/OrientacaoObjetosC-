@@ -31,17 +31,44 @@ Pessoa Pessoa1, Pessoa2, Pessoa3, Pessoa4;
 Pessoa3 = new Pessoa();
 Pessoa4 = new Pessoa();
 
-System.Console.WriteLine("Digite o nome da primeira pessoa: ");
-Pessoa3.Nome = Console.ReadLine();
-System.Console.WriteLine("Digite o salario da primeira pessoa: ");
-Pessoa3.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// System.Console.WriteLine("Digite o nome da primeira pessoa: ");
+// Pessoa3.Nome = Console.ReadLine();
+// System.Console.WriteLine("Digite o salario da primeira pessoa: ");
+// Pessoa3.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
-System.Console.WriteLine("Digite o nome da segunda pessoa: ");
-Pessoa4.Nome = Console.ReadLine();
-Pessoa4.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// System.Console.WriteLine("Digite o nome da segunda pessoa: ");
+// Pessoa4.Nome = Console.ReadLine();
+// string PessoaNome = Pessoa4.Nome;
+// Pessoa4.Salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double media = (double)((Pessoa3.Salario + Pessoa4.Salario) / 2);
+// double media = (double)((Pessoa3.Salario + Pessoa4.Salario) / 2);
 
-System.Console.WriteLine(media.ToString("F2", CultureInfo.InvariantCulture));
+// System.Console.WriteLine(media.ToString("F2", CultureInfo.InvariantCulture));
+
+
+
+
+
+// static double? Media(int salario, int n)
+// {
+
+System.Console.Write("Digite a quantidade de pessoa: ");
+int n = int.Parse(Console.ReadLine());
+double media = 0;
+for (int i = 1; i <= n; i++)
+{
+    System.Console.Write($"Digite o nome da {i}ª Pessoa :");
+    string nome = Console.ReadLine();
+    System.Console.Write($"Digite o salario da {i}ª pessoa: ");
+    double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+    salario += salario;
+    media = salario / n;
+}
+System.Console.WriteLine($"Média salarial das {n} pessoas é : {media}");
+// double mediaResultado = soma / n;
+// return mediaResultado;
+// }
+
 
