@@ -82,9 +82,9 @@ x = new Triangulo();
 System.Console.Write("Digite o tamanho do primeiro lado:");
 x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 System.Console.Write("Digite o tamanho do segundo lado:");
-x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 System.Console.Write("Digite o tamanho do terceiro lado:");
-x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 
 
