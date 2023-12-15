@@ -15,6 +15,14 @@ public class Produto
         double valorDeEstoque = (double)(Preco * Quantidade);
         return valorDeEstoque;
     }
+    public void AdicionaQuantidade(int quantidade)
+    {
+        Quantidade += quantidade;
+    }
+    public void RemoverQuantidade(int quantidade)
+    {
+        Quantidade -= quantidade;
+    }
     public override string ToString()
     {
         return Nome

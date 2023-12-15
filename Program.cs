@@ -106,6 +106,11 @@ P.Quantidade = int.Parse(Console.ReadLine());
 
 
 double somaProduto1 = P.ValorTotalEmEstoque();
-System.Console.WriteLine($"Valor total em estoque: {P}");
+Console.WriteLine($"Valor total em estoque: {P}");
+
+System.Console.Write($"\nDigite o número de produtos a ser adicionado");
+int qte = int.Parse(Console.ReadLine());
 
 
+P.AdicionaQuantidade(qte);
+Console.WriteLine($"Valor total em estoque: {P}");
