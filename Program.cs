@@ -106,6 +106,6 @@ P.Quantidade = int.Parse(Console.ReadLine());
 
 
 double somaProduto1 = P.ValorTotalEmEstoque();
-System.Console.WriteLine($"Valor total em estoque: {somaProduto1.ToString("F2", CultureInfo.InvariantCulture)}");
+System.Console.WriteLine($"Valor total em estoque: {P}");
 
 

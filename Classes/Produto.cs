@@ -19,7 +19,11 @@ public class Produto
     {
         return Nome
         + ", $"
-        + Preco.ToString("F2", CultureInfo.InvariantCulture);
+        + Preco.ToString("F2", CultureInfo.InvariantCulture)
+        + ", "
+        + Quantidade
+        + " Unidades, Total:$"
+        + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
     }
 
 }
