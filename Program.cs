@@ -71,8 +71,8 @@
 // return mediaResultado;
 // }
 
-using System.Globalization;
-using OrientacaoObjetosC_;
+// using System.Globalization;
+// using OrientacaoObjetosC_;
 
 // Triangulo x, y;
 
@@ -91,26 +91,89 @@ using OrientacaoObjetosC_;
 // double areaX = x.Area();
 
 // System.Console.WriteLine(areaX.ToString("F2", CultureInfo.InvariantCulture));
-Produto P = new();
-Console.WriteLine("Entre com os dados do produto: ");
+// void mensagemDeBoasVindas()
+// {
+//     Console.Clear();
+//     string mensagem = @"
+// ██╗    ██╗███╗   ███╗███████╗
+// ██║    ██║████╗ ████║██╔════╝
+// ██║ █╗ ██║██╔████╔██║███████╗
+// ██║███╗██║██║╚██╔╝██║╚════██║
+// ╚███╔███╔╝██║ ╚═╝ ██║███████║
+//  ╚══╝╚══╝ ╚═╝     ╚═╝╚══════╝
+//                              ";
+//     System.Console.WriteLine(mensagem);
+// };
+// void ExibeOpcoesDeMenu()
+// {
+//     Console.Clear();
+//     mensagemDeBoasVindas();
+//     Console.WriteLine($"\nDigite 1 para registrar um produto: ");
+//     Console.WriteLine($"Digite 2 para aumentar a quantidade de produto: ");
+//     Console.WriteLine($"Digite 3 para retirar uma determinada quantidade de um produto: ");
+//     Console.WriteLine($"Digite 0 para sair: ");
 
-Console.Write("Nome do produto: ");
-P.Nome = Console.ReadLine();
-
-Console.Write("Preço: ");
-P.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-
-Console.Write("Quantidade: ");
-P.Quantidade = int.Parse(Console.ReadLine());
+//     Console.WriteLine("Digite sua opção:");
+//     int opcaoEscolhida = int.Parse(Console.ReadLine());
 
 
+//     switch (opcaoEscolhida)
+//     {
+//         Produto produto = new()
+//         case 1:
+//             Produto.ValorTotalEmEstoque();
+//             break;
+//         case 2:
+//             Produto.AdicionaQuantidade();
+//             break;
+//         case 3:
+//             Produto.RemoverQuantidade();
+//             break;
+//         case 0:
+//             Produto.ValorTotalEmEstoque();
+//             break;
+//     }
+// }
+// Produto P = new();
+// Console.WriteLine("Entre com os dados do produto: ");
 
-double somaProduto1 = P.ValorTotalEmEstoque();
-Console.WriteLine($"Valor total em estoque: {P}");
+// Console.Write("Nome do produto: ");
+// P.Nome = Console.ReadLine();
 
-System.Console.Write($"\nDigite o número de produtos a ser adicionado");
-int qte = int.Parse(Console.ReadLine());
+// Console.Write("Preço: ");
+// P.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+// Console.Write("Quantidade: ");
+// P.Quantidade = int.Parse(Console.ReadLine());
 
 
-P.AdicionaQuantidade(qte);
-Console.WriteLine($"Valor total em estoque: {P}");
+
+// double somaProduto1 = P.ValorTotalEmEstoque();
+// Console.WriteLine($"Valor total em estoque: {P}");
+
+// System.Console.Write($"\nDigite o número de produtos a ser adicionado");
+// int qte = int.Parse(Console.ReadLine());
+
+
+// P.AdicionaQuantidade(qte);
+// Console.WriteLine($"Valor total em estoque: {P}");
+
+using System.Globalization;
+using OrientacaoObjetosC_;
+
+Retangulo retangulo = new();
+
+System.Console.Write("Digite a Altura do retangulo: ");
+retangulo.Altura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+System.Console.Write("Digite a largura do retangulo: ");
+retangulo.Largura = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+
+double retanguloetanguloArea = retangulo.RetanguloArea();
+double retanguloPerimetro = retangulo.RetanguloPerimetro();
+double retanguloDiagonal = retangulo.RetanguloDiagonal();
+
+System.Console.WriteLine($"\nÁREA = {retanguloetanguloArea.ToString("F2", CultureInfo.InvariantCulture)}");
+System.Console.WriteLine($"PÉRIMETRO = {retanguloPerimetro.ToString("F2", CultureInfo.InvariantCulture)}");
+System.Console.WriteLine($"DIAGONAL = {retanguloDiagonal.ToString("F2", CultureInfo.InvariantCulture)}");
