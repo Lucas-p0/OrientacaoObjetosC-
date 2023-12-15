@@ -1,8 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Globalization;
-using OrientacaoObjetosC_;
+// using System.Globalization;
+// using OrientacaoObjetosC_;
 
-Pessoa Pessoa1, Pessoa2, Pessoa3, Pessoa4;
+// Pessoa Pessoa1, Pessoa2, Pessoa3, Pessoa4;
 
 // Pessoa1 = new Pessoa();
 // Pessoa2 = new Pessoa();
@@ -28,8 +28,8 @@ Pessoa Pessoa1, Pessoa2, Pessoa3, Pessoa4;
 //     System.Console.WriteLine($"{Pessoa2.Nome} é mais velha!");
 // }
 
-Pessoa3 = new Pessoa();
-Pessoa4 = new Pessoa();
+// Pessoa3 = new Pessoa();
+// Pessoa4 = new Pessoa();
 
 // System.Console.WriteLine("Digite o nome da primeira pessoa: ");
 // Pessoa3.Nome = Console.ReadLine();
@@ -53,22 +53,42 @@ Pessoa4 = new Pessoa();
 // static double? Media(int salario, int n)
 // {
 
-System.Console.Write("Digite a quantidade de pessoa: ");
-int n = int.Parse(Console.ReadLine());
-double media = 0;
-for (int i = 1; i <= n; i++)
-{
-    System.Console.Write($"Digite o nome da {i}ª Pessoa :");
-    string nome = Console.ReadLine();
-    System.Console.Write($"Digite o salario da {i}ª pessoa: ");
-    double salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// System.Console.Write("Digite a quantidade de pessoa: ");
+// int n = int.Parse(Console.ReadLine());
+// double media = 0;
+// for (int i = 1; i <= n; i++)
+// {
+//     System.Console.Write($"Digite o nome da {i}ª Pessoa :");
+//     string? nome = Console.ReadLine();
+//     System.Console.Write($"Digite o salario da {i}ª pessoa: ");
+//     double? salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-    salario += salario;
-    media = salario / n;
-}
-System.Console.WriteLine($"Média salarial das {n} pessoas é : {media}");
+//     salario += salario;
+//     media = (double)(salario / n);
+// }
+// System.Console.WriteLine($"Média salarial das {n} pessoas é : {media}");
 // double mediaResultado = soma / n;
 // return mediaResultado;
 // }
 
+using System.Globalization;
+using OrientacaoObjetosC_;
+
+Triangulo x, y;
+
+x = new Triangulo();
+
+
+System.Console.Write("Digite o tamanho do primeiro lado:");
+x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+System.Console.Write("Digite o tamanho do segundo lado:");
+x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+System.Console.Write("Digite o tamanho do terceiro lado:");
+x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+
+
+double areaX = x.Area();
+
+System.Console.WriteLine(areaX.ToString("F2", CultureInfo.InvariantCulture));
 
