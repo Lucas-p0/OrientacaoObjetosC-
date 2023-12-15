@@ -74,21 +74,38 @@
 using System.Globalization;
 using OrientacaoObjetosC_;
 
-Triangulo x, y;
+// Triangulo x, y;
 
-x = new Triangulo();
-
-
-System.Console.Write("Digite o tamanho do primeiro lado:");
-x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-System.Console.Write("Digite o tamanho do segundo lado:");
-x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-System.Console.Write("Digite o tamanho do terceiro lado:");
-x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// x = new Triangulo();
 
 
+// System.Console.Write("Digite o tamanho do primeiro lado:");
+// x.A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// System.Console.Write("Digite o tamanho do segundo lado:");
+// x.B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// System.Console.Write("Digite o tamanho do terceiro lado:");
+// x.C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-double areaX = x.Area();
 
-System.Console.WriteLine(areaX.ToString("F2", CultureInfo.InvariantCulture));
+
+// double areaX = x.Area();
+
+// System.Console.WriteLine(areaX.ToString("F2", CultureInfo.InvariantCulture));
+Produto P = new();
+Console.WriteLine("Entre com os dados do produto: ");
+
+Console.Write("Nome do produto: ");
+P.Nome = Console.ReadLine();
+
+Console.Write("Preço: ");
+P.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Console.Write("Quentidade: ");
+P.Quantidade = int.Parse(Console.ReadLine());
+
+
+
+double somaProduto1 = P.ValorTotalEmEstoque();
+System.Console.WriteLine($"Valor total em estoque: {somaProduto1.ToString("F2", CultureInfo.InvariantCulture)}");
+
 
