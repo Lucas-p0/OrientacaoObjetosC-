@@ -100,7 +100,7 @@ P.Nome = Console.ReadLine();
 Console.Write("Preço: ");
 P.Preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-Console.Write("Quentidade: ");
+Console.Write("Quantidade: ");
 P.Quantidade = int.Parse(Console.ReadLine());
 
 
