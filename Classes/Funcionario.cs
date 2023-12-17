@@ -2,7 +2,7 @@ namespace OrientacaoObjetosC_;
 
 public class Funcionario
 {
-    public string Nome;
+    public string? Nome;
     public double SalarioBruto;
     public double Imposto;
 

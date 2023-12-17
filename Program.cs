@@ -177,23 +177,45 @@ using OrientacaoObjetosC_;
 // System.Console.WriteLine($"\nÁREA = {retanguloetanguloArea.ToString("F2", CultureInfo.InvariantCulture)}");
 // System.Console.WriteLine($"PÉRIMETRO = {retanguloPerimetro.ToString("F2", CultureInfo.InvariantCulture)}");
 // System.Console.WriteLine($"DIAGONAL = {retanguloDiagonal.ToString("F2", CultureInfo.InvariantCulture)}");
-Funcionario funcionario = new();
+// Funcionario funcionario = new();
 
-Console.Write("Digite o nome do colaborador: ");
-funcionario.Nome = Console.ReadLine();
+// Console.Write("Digite o nome do colaborador: ");
+// funcionario.Nome = Console.ReadLine();
 
-Console.Write("Digite o salario do colaborador: ");
-funcionario.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// Console.Write("Digite o salario do colaborador: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// funcionario.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
 
-Console.Write("Digite os descontos do colaborador: ");
-funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// Console.Write("Digite os descontos do colaborador: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
 
-double salarioLiquido = funcionario.SalarioLiquido();
+// double salarioLiquido = funcionario.SalarioLiquido();
 
-System.Console.Write("Digite a porcentagem para aumentar o salário: ");
-double porcentagem = double.Parse(Console.ReadLine());
+// System.Console.Write("Digite a porcentagem para aumentar o salário: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// double porcentagem = double.Parse(Console.ReadLine());
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
 
-double aumentarSalario = funcionario.AumentarSalario(porcentagem);
+// double aumentarSalario = funcionario.AumentarSalario(porcentagem);
 
-System.Console.WriteLine($"Dados atualizados: {aumentarSalario}");
+// System.Console.WriteLine($"Dados atualizados: {aumentarSalario}");
+
+Aluno aluno = new();
+
+Console.Write("Digite o nome do aluno: ");
+aluno.Nome = Console.ReadLine();
+
+Console.Write("Digite a primeira nota do aluno: ");
+aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.Write("Digite a segunda nota do aluno: ");
+aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.Write("Digite a terceira nota do aluno: ");
+aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+double mediaAluno = aluno.Media();
+
+Console.Write($"{mediaAluno.ToString("F2", CultureInfo.InvariantCulture)}");
 
