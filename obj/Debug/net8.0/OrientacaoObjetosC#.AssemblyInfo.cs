@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OrientacaoObjetosC#")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+beef6213afc79514a4bbee9edd859dc5e126e845")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28796b7d147c5663ef76eb21c6ca6da2a9ce6b32")]
 [assembly: System.Reflection.AssemblyProductAttribute("OrientacaoObjetosC#")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OrientacaoObjetosC#")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
