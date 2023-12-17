@@ -10,8 +10,5 @@ public class Funcionario
     {
         return (double)(SalarioBruto - Imposto);
     }
-    public double AumentarSalario(double porcentagem)
-    {
-        SalarioBruto += porcentagem / SalarioBruto * 100.00;
-    }
+    public double AumentarSalario(double porcentagem) => SalarioBruto += porcentagem / SalarioBruto * 100.00;
 }

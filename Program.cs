@@ -179,18 +179,18 @@ using OrientacaoObjetosC_;
 // System.Console.WriteLine($"DIAGONAL = {retanguloDiagonal.ToString("F2", CultureInfo.InvariantCulture)}");
 Funcionario funcionario = new();
 
-Console.Write("Digite o nome do colaborador");
+Console.Write("Digite o nome do colaborador: ");
 funcionario.Nome = Console.ReadLine();
 
-Console.Write("Digite o salario do colaborador");
+Console.Write("Digite o salario do colaborador: ");
 funcionario.SalarioBruto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-Console.Write("Digite os descontos do colaborador");
+Console.Write("Digite os descontos do colaborador: ");
 funcionario.Imposto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
 double salarioLiquido = funcionario.SalarioLiquido();
 
-System.Console.WriteLine("Digite a porcentagem para aumentar o salário:");
+System.Console.Write("Digite a porcentagem para aumentar o salário: ");
 double porcentagem = double.Parse(Console.ReadLine());
 
 double aumentarSalario = funcionario.AumentarSalario(porcentagem);
