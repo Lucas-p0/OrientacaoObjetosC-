@@ -209,11 +209,17 @@ Console.Write("Digite o nome do aluno: ");
 aluno.Nome = Console.ReadLine();
 
 Console.Write("Digite a primeira nota do aluno: ");
+#pragma warning disable CS8604 // Possível argumento de referência nula.
 aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+#pragma warning restore CS8604 // Possível argumento de referência nula.
 Console.Write("Digite a segunda nota do aluno: ");
+#pragma warning disable CS8604 // Possível argumento de referência nula.
 aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+#pragma warning restore CS8604 // Possível argumento de referência nula.
 Console.Write("Digite a terceira nota do aluno: ");
+#pragma warning disable CS8604 // Possível argumento de referência nula.
 aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+#pragma warning restore CS8604 // Possível argumento de referência nula.
 
 double mediaAluno = aluno.Media();
 
