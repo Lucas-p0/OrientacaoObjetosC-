@@ -1,4 +1,30 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System.Globalization;
+using OrientacaoObjetosC_;
+
+Cotacao cotacao = new();
+
+Console.Write("Qual a cotação do dolar? ");
+cotacao.CotacaoDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+Console.Write("Quantos dolares você deseja comprar? ");
+cotacao.QuantidadeDolar = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+double resultado = cotacao.CalculoCotacaoDolar();
+
+Console.Write($"Valor a ser pago: {resultado.ToString("F2", CultureInfo.InvariantCulture)}");
+
+
+
+
+
+
+
+
+
+
+
+
+// See https://aka.ms/new-console-template for more information
 // using System.Globalization;
 // using OrientacaoObjetosC_;
 
@@ -158,8 +184,7 @@
 // P.AdicionaQuantidade(qte);
 // Console.WriteLine($"Valor total em estoque: {P}");
 
-using System.Globalization;
-using OrientacaoObjetosC_;
+
 
 // Retangulo retangulo = new();
 
@@ -203,25 +228,25 @@ using OrientacaoObjetosC_;
 
 // System.Console.WriteLine($"Dados atualizados: {aumentarSalario}");
 
-Aluno aluno = new();
+// Aluno aluno = new();
 
-Console.Write("Digite o nome do aluno: ");
-aluno.Nome = Console.ReadLine();
+// Console.Write("Digite o nome do aluno: ");
+// aluno.Nome = Console.ReadLine();
 
-Console.Write("Digite a primeira nota do aluno: ");
-#pragma warning disable CS8604 // Possível argumento de referência nula.
-aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-#pragma warning restore CS8604 // Possível argumento de referência nula.
-Console.Write("Digite a segunda nota do aluno: ");
-#pragma warning disable CS8604 // Possível argumento de referência nula.
-aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-#pragma warning restore CS8604 // Possível argumento de referência nula.
-Console.Write("Digite a terceira nota do aluno: ");
-#pragma warning disable CS8604 // Possível argumento de referência nula.
-aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-#pragma warning restore CS8604 // Possível argumento de referência nula.
+// Console.Write("Digite a primeira nota do aluno: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// aluno.Nota1 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
+// Console.Write("Digite a segunda nota do aluno: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// aluno.Nota2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
+// Console.Write("Digite a terceira nota do aluno: ");
+// #pragma warning disable CS8604 // Possível argumento de referência nula.
+// aluno.Nota3 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+// #pragma warning restore CS8604 // Possível argumento de referência nula.
 
-double mediaAluno = aluno.Media();
+// double mediaAluno = aluno.Media();
 
-Console.Write($"{mediaAluno.ToString("F2", CultureInfo.InvariantCulture)}");
+// Console.Write($"{mediaAluno.ToString("F2", CultureInfo.InvariantCulture)}");
 
