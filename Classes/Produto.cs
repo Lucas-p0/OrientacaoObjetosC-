@@ -1,38 +1,38 @@
-// using System.Globalization;
+using System.Globalization;
 
-// namespace OrientacaoObjetosC_;
+namespace OrientacaoObjetosC_;
 
-// public class Produto
-// {
-//     public string? Nome;
-//     public double Preco;
-//     public int Quantidade;
+public class Produto(string? nome, double preco, int quantidade)
+{
 
-
-//     public double ValorTotalEmEstoque(double Preco, int Quantidade)
-//     {
+    public string? Nome = nome;
+    public double Preco = preco;
+    public int Quantidade = quantidade;
 
 
-//         double valorDeEstoque = (double)(Preco * Quantidade);
-//         return valorDeEstoque;
-//     }
-//     public void AdicionaQuantidade(int quantidade)
-//     {
-//         Quantidade += quantidade;
-//     }
-//     public void RemoverQuantidade(int quantidade)
-//     {
-//         Quantidade -= quantidade;
-//     }
-//     public override string ToString()
-//     {
-//         return Nome
-//         + ", $"
-//         + Preco.ToString("F2", CultureInfo.InvariantCulture)
-//         + ", "
-//         + Quantidade
-//         + " Unidades, Total:$"
-//         + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
-//     }
+    public static double ValorTotalEmEstoque(double Preco, int Quantidade)
+    {
+        double valorDeEstoque = (double)(Preco * Quantidade);
+        return valorDeEstoque;
 
-// }
+    }
+    public void AdicionaQuantidade(int quantidade)
+    {
+        Quantidade += quantidade;
+    }
+    public void RemoverQuantidade(int quantidade)
+    {
+        Quantidade -= quantidade;
+    }
+    // public override string ToString()
+    // {
+    //     return Nome
+    //     + ", $"
+    //     + Preco.ToString("F2", CultureInfo.InvariantCulture)
+    //     + ", "
+    //     + Quantidade
+    //     + " Unidades, Total:$"
+    //     + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
+    // }
+
+}
